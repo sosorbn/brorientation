@@ -1,0 +1,99 @@
+/*POLICE*/
+
+@font-face {
+    font-family: 'CaviarDreams';
+    src: url('../police/CaviarDreams.ttf') format('truetype');
+}
+
+/*GENERAL*/
+
+body{
+  padding: 0px;
+  margin: 0px;
+  background-color: cadetblue;
+  font-family: "Time New Roman";
+  z-index : 1;
+  background-attachment: fixed;
+  color: black;
+}
+
+/*HEADER_FOOTER*/
+
+header{
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0px;
+  z-index: 3;
+  box-shadow: 0px 4px 5px #3F3940;
+  background-color : white;
+}
+
+header a{
+ text-align: center;
+ text-decoration: none;
+ font-size: 1.1em;
+ color: black;
+}
+
+header #nav1{
+  display: flex;
+  text-align: center;
+}
+
+header #nav2{
+  display: flex;
+}
+
+header #espace{
+  text-align: center;
+  display: flex;
+  padding: 3px;
+  font-family:'CaviarDreams';
+  font-weight: bold;
+  margin-top: 25px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+
+header #logo_bro {
+  height: 50px;
+  margin-right: 10px;
+}
+
+header #bouton_nav2 {
+  margin-right: 10px;
+}
+
+header #bouton_nav3{
+  margin-right: 10px;
+}
+
+header #bouton_nav4{
+  margin-right: 10px;
+}
+
+#bouton_fb , #bouton_insta {
+  align-content: flex-start;
+  margin-top: 10px;
+  margin-right: 10px;
+  height: 30px;
+  width : 30px;
+}
+
+footer{
+  height: 50px;
+  width: 100%;
+  background: url("../images/image_header.jpg");
+  box-shadow: 4px 4px 5px #3F3940;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 2px 0px 2px 0px;
+  font-size: 0.8em;
+  font-weight: bold;
+}

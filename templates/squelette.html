@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang = "fr">
+  <head>
+    <meta charset="utf-8"/>
+    <title id="titre">{% block title %}homePage{% endblock %}</title>
+    <link rel="stylesheet" href="{% static "css/squelette.css" %}"/>
+    {% block link %}{% endblock %}
+  </head>
+
+  <body>
+
+    <header>
+      {% block header %}
+      <div id="nav1">
+        <div id="bouton_nav1"><a href="/accueil/accueilVisiteur"><img id="logo_bro" alt="logobro" src="{% static "images/logo_bro.jpg" %}"</a></div>
+        <a href="https://www.facebook.com/search/top/?q=groupe%20running%20ajbo"><img id="bouton_fb" src="{% static "images/logo_fb.png" %}"  alt="logo fb"/></a>
+        <a href="#" ><img id="bouton_insta" alt="logo insta" src="{% static "images/logo_insta.png" %}" alt="logo insta"/></a>
+      </div>
+      <div id= "espace">
+        <div id="bouton_nav2"><a href="#">aide</a></div>
+        <div id="bouton_nav3"><a href="#">Connection</a></div>
+        <div id="bouton_nav4"><a href="#">S'inscrire</a></div>
+      </div>
+      {% endblock %}
+    </header>
+    {% block content %}{% endblock %}
+    <footer>
+      {% block footer %}
+      <p> mentions légales, brorientation</p>
+      <p>tout droits réservés</p>
+      <p> 69100 villeurbanne zoo</p>
+      {% endblock %}
+    </footer>
+
+  </body>
+</html>
