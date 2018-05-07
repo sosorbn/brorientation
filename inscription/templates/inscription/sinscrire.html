@@ -1,0 +1,23 @@
+{% extends "squelette.html" %}
+{% block title %}Page d'Accueil{%endblock%}
+{% load static %}
+
+{% block link %}
+<link rel="stylesheet"  href="{% static "inscription/css/sinscrire.css" %}"/>
+{% endblock %}
+
+{% block content %}
+<div id="block_page">
+  <div id="titre1">
+    <h1 class="titre">Page d'inscription !</h1>
+    <a href="postulant">S'inscrire en tant que postulant</a>
+     <br />
+    <a href="intervenant">S'inscrire en tant qu'intervenant</a>
+
+
+  </div>
+ </div>
+
+</div>
+
+{% endblock %}
