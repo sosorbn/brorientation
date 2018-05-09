@@ -1,0 +1,47 @@
+{% extends "index.html" %}
+{% block title %}Page d'Inscription{%endblock%}
+{% load static %}
+
+{% block link %}
+<link rel="stylesheet"  href="{% static "inscription/css/formulaire.css" %}"/>
+{% endblock %}
+
+{% block content %}
+<div class="container" id="formulaire">
+  {% if inscription %}<p>Votre message a bien été envoyé !</p>{% endif %}
+  <p class="legend">Formulaire d'inscription intervenant </p>
+  <form action="{% url "get_intervenant_infos" %}" method="post">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="{{form.intervenant_prenom.id_for_label}}">Prénom:</label>
+      {{form.intervenant_prenom}}
+    </div>
+    <div class="form-group">
+      <label for="{{form.intervenant_nom.id_for_label}}">Nom:</label>
+      {{form.intervenant_nom}}
+    </div>
+    <div class="form-group">
+      <label for="{{form.date_naissance.id_for_label}}">Date de naissance:</label>
+      {{form.date_naissance}}
+    </div>
+    <div class="form-group">
+      <label for="{{form.intervenant_password.id_for_label}}">Password:</label>
+      {{form.intervenant_password}}
+    </div>
+    <div class="form-group">
+      <label for="{{form.intervenant_passwordConfirmation.id_for_label}}">password Confirmation:</label>
+      {{form.intervenant_passwordConfirmation}}
+    </div>
+    <div class="form-group">
+      <label for="{{form.adresse_mail.id_for_label}}">adresse mail:</label>
+      {{form.adresse_mail}}
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+  </form>
+</div>
+{% endblock %}

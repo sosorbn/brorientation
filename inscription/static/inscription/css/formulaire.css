@@ -1,0 +1,21 @@
+#formulaire {
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px black;
+  border-radius: 5px;
+}
+
+div.form-group {
+  border-bottom: 1px;
+  border-color: grey;
+}
+
+.champ_form{
+  margin: 10px;
+}
+
+.legend {
+  font-weight: bold;
+  font-size: 1.5rem;
+}

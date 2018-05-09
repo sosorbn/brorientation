@@ -1,0 +1,28 @@
+#block_page {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: auto;
+  height: 2000px;
+  text-align: center;
+  z-index: 3;
+}
+
+#titre1 {
+  margin-top: 200px;
+  text-align: left;
+  font-size: 0.8;
+}
+
+
+
+#id_q {
+  height: 25px;
+  width: 500px;
+  box-shadow: 2px 2px 2px #3F3940;
+  border-radius: 10px;
+}
+#btn-orange {
+  height: 30px;
+  width: 70px;
+}
